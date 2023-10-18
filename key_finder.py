@@ -58,7 +58,6 @@ class Tonal_Fragment(object):
         
         # this attribute represents the key determined by the algorithm
         self.key = max(self.key_dict, key=self.key_dict.get)
-        self.bestcorr = max(self.key_dict.values())
         
     # printout of the key determined by the algorithm; if another key is close, that key is mentioned
     def get_key(self):
