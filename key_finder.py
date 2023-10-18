@@ -62,6 +62,4 @@ class Tonal_Fragment(object):
         
     # printout of the key determined by the algorithm; if another key is close, that key is mentioned
     def get_key(self):
-        return f"the song likely key is {max(self.key_dict, key=self.key_dict.get)}"
-        if self.altkey is not None:
-                print("also possible: ", self.altkey, ", correlation: ", self.altbestcorr, sep='')
+        return f"the song likely key is {self.key_dict}"
