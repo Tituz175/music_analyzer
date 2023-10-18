@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from song_analyzer import analyzer
 
-st.title("Demucs: Music Source Separation")
+st.title("Musicnalyzer")
 
 st.write("Upload an audio file for source separation.")
 uploaded_audio = st.file_uploader("Upload Audio File", type=["mp3", "wav"])
