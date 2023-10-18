@@ -61,4 +61,4 @@ class Tonal_Fragment(object):
         
     # printout of the key determined by the algorithm; if another key is close, that key is mentioned
     def get_key(self):
-        return f"the song likely key is {self.key_dict}"
+        return f"the song likely key is {self.key}"
