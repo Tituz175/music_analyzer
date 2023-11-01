@@ -42,8 +42,9 @@ class Tonal_Fragment(object):
         maj_profile = [6.35, 2.23, 3.48, 2.33, 4.38, 4.09, 2.52, 5.19, 2.39, 3.66, 2.29, 2.88]
         min_profile = [6.33, 2.68, 3.52, 5.38, 2.60, 3.53, 2.54, 4.75, 3.98, 2.69, 3.34, 3.17]
 
-        # finds correlations between the amount of each pitch class in the time interval and the above profiles,
-        # starting on each of the 12 pitches. then creates dict of the musical keys (major/minor) to the correlation
+        # finds correlations between the amount of each pitch class in the time interval and the
+        # above profiles, starting on each of the 12 pitches. then creates dict of the musical
+        # keys (major/minor) to the correlation
         self.min_key_corrs = []
         self.maj_key_corrs = []
         for i in range(12):
@@ -59,6 +60,7 @@ class Tonal_Fragment(object):
         # this attribute represents the key determined by the algorithm
         self.key = max(self.key_dict, key=self.key_dict.get)
         
-    # printout of the key determined by the algorithm; if another key is close, that key is mentioned
+    # printout of the key determined by the algorithm; if another key is close,
+    # that key is mentioned
     def get_key(self):
         return f"the song likely key is {self.key}"
